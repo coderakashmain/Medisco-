@@ -310,6 +310,7 @@ var Madula = (function () {
 
 
 var clickToLogin = function (){
+
   $(".login-popup").removeClass("hide");
 }
 $(document).on("click", ".login-btn", clickToLogin);
