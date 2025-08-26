@@ -4831,6 +4831,11 @@
       bottom: -15%;
     }
   }
+  .lg\:bottom-0 {
+    @media (width >= 992px) {
+      bottom: 0%;
+    }
+  }
   .lg\:left-\[-11\%\] {
     @media (width >= 992px) {
       left: -11%;
@@ -4955,6 +4960,11 @@
   .lg\:h-\[100vh\] {
     @media (width >= 992px) {
       height: 100vh;
+    }
+  }
+  .lg\:h-full {
+    @media (width >= 992px) {
+      height: 100%;
     }
   }
   .lg\:w-1\/2 {
