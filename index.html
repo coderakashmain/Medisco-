@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <!-- Mirrored from madula.dexignlab.com/tailwind/demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jul 2025 07:05:12 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="keywords"
+      content="Madula, health website template, medical Tailwind CSS template, responsive medical design, doctor clinic website, healthcare template, hospital HTML site, medical UI, Tailwind HTML template, medical dashboard, modern health UI, clinic website template"
+    />
+
+    <meta
+      name="description"
+      content="Madula is a modern Health & Medical Tailwind CSS Template built for clinics, hospitals, and healthcare professionals. Fully responsive and customizable for a professional online presence."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Madula – Health & Medical Tailwind CSS Template | Dexignlab"
+    />
+    <meta
+      name="twitter:description"
+      content="Madula is a responsive medical and health website template built with Tailwind CSS, ideal for clinics, hospitals, and healthcare services."
+    />
+    <meta name="twitter:image" content="../social-image.png" />
+
+    <title>Madula - Health & Medical Tailwind CSS Template</title>
+    <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/icons/flaticon/flaticon.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/icons/fontawesome/css/all.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/icons/themify-icons/css/themify-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="./fonts.googleapis.com/css22dc9.css?family=Sora:wght@100..800&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="selection:bg-primary selection:text-white">
+    <!-- preloader -->
+    <div class="preloader">
+      <div id="loader"></div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header -->
+    <header
+      class="z-99 sticky-header main-bar-wraper navbar-expand-lg duretion-500"
+    >
+      <div class="main-bar">
+        <div class="container">
+          <div class="bottom-bar">
+            <div class="two-bar">
+              <div class="flex items-center justify-between">
+                <div class="logo">
+                  <a href="index-2.html">
+                    <img alt="logo" src="assets/img/logo.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+       
+            <nav class="navbar lg:block hidden">
+              <ul class="navbar-links">
+                <li class="navbar-dropdown">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="#about">About</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="#pricing">Plans</a>
+                </li>
+
+                <li class="navbar-dropdown service-dropdown-out-box dropdown-out-box  relative ">
+                  <a href="#services">Services</a>
+                  <div class="service-dropdown-box dropdown-box  absolute top-[100%] left-[-100%] w-[30vw]    bg-white font-normal  z-99 mt-30 flex flex-col  shadow">
+                    <ul>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="navbar-dropdown">
+                  <a href="#">contact</a>
+                </li>
+              </ul>
+            </nav>
+            
+            <div class="flex gap-10 align-center">
+              <div class="header-menu-right h-full flex items-center gap-10">
+                <div class="header-auth dropdown-out-box flex gap-10 items-center text-secondary font-semibold cursor-pointer relative">
+
+                    <span class="hover:text-primary">Join as Provider</span> 
+                  <div class="header-auth-dropdown dropdown-box absolute top-[100%] right-0 w-full    bg-white font-normal  z-99 mt-30 flex flex-col  shadow">
+                    <ul>
+                      <li  class="register-btn font-normal text-sm text-black  hover:bg-primary hover:text-white px-12 py-10"><i class="fa-solid fa-user-plus w-25 "></i> Register</li>
+                  
+                          
+                     
+                       <li  class="login-btn font-normal text-sm text-black px-10 hover:bg-primary hover:text-white px-12 py-10"><i class="fa-solid fa-user w-25 "></i> Log In</li>
+
+                    </ul>
+                    
+                   
+                  </div>
+              </div>
+
+      <!-- Login popUp -->
+
+        <div class=" login-popup hide  fixed top-0 left-0 inset-0 bg-[#646464ad]  w-screen h-screen z-1002 ">
+          
+
+          <div class="container flex items-center justify-center relative h-full   ">
+            <div class="login-box relative md:w-[60%] lg:w-1/2 w-full  bg-white shadow rounded-[10px]  p-30">
+              <form action="#">
+                
+                <div class=" sticky">
+                   <button  class = 'close-btn  '><i class="fa-solid fa-xmark"></i></button>
+                   <div class="text-center mb-40">
+                     <a href="index.html" class="mb-5 inline-block">
+                       <img src="assets/img/logo.png" alt="logo" class="max-w-[160px]" />
+                      </a>
+                      <h3 class="text-2xl font-semibold text-secondary">Welcome Back!</h3>
+                      <p class="text-base text-body-color text-gary text-sm">Log in to your account</p>
+                    </div>
+                  </div>
+                    <div class="mb-6 flex bg-[#F4F4FF] gap-10 border border-lightgary align-center justify-center rounded p-10 mb-20">
+                        <!-- <label for="email" class="block text-sm font-medium text-dark mb-2">User Id</label> -->
+                       <span class="flex align-center justify-between text-gary"> <i class="fa-solid fa-user flex align-center justify-between "></i></span> 
+                        <input type="text" name="userid" id="userid" placeholder="User Id" class="w-full  outline-none focus:border-primary focus-visible:shadow-none" />
+                    </div>
+                    <div class="mb-6 flex  bg-[#F4F4FF] gap-10 border border-lightgary align-center justify-center rounded p-10 mb-20">
+                        <!-- <label for="password" class="block text-sm font-medium text-dark mb-2">Password</label> -->
+                         <span class="flex align-center justify-between text-gary  ">
+                             <i class="fa-solid fa-lock"></i>
+
+                         </span>
+                        <input type="password" name="password" id="password" placeholder="Enter password" class="login-password w-full outline-none focus:border-primary focus-visible:shadow-none" />
+                        <span class="password-eye flex align-center justify-between  text-gary  cursor-pointer">
+                          <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+                    <div class="flex  justify-between items-center mb-20">
+                        <div class="form-check flex align-center justify-center gap-10">
+                            <input type="checkbox" name="remember" id="remember" class="h-4 w-4 rounded border border-[#E9EDF4] bg-white checked:bg-primary checked:border-primary focus:ring-0" />
+                            <label for="remember" class="text-sm text-body-color ">Remember me</label>
+                        </div>
+                        <a href="forgot-password.html" class="text-sm text-primary hover:underline font-semibold">
+                            Forgot Password?
+                        </a>
+                    </div>
+                    <div class="mb-10">
+                        <button type="submit" class="button w-full bg-primary text-white py-7  px-5 rounded hover:bg-opacity-90 transition cursor-pointer">Log In</button>
+                    </div>
+                    <div class="flex  items-center gap-10  mt-10">
+
+                      <p class="text-center text-sm text-body-color">Don't have an account? </p>
+                      <p  class=" switch-register cursor-pointer text-center font-semibold text-sm text-primary hover:underline block">Sign Up</p>
+                    </div>
+                    
+
+
+                </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Registration popUp -->
+
+        <div class=" register-popup   fixed top-0 left-0 inset-0 bg-[#646464ad]  w-screen h-screen z-1002 hide">
+          
+          <div class="container flex items-center justify-center relative h-full   ">
+            <div class="register-box relative  md:w-[60%] lg:w-1/2 w-full max-h-[90vh] scroll  bg-white shadow rounded-[10px]  px-30 pb-30">
+              <form action="#">
+                <div  class="sticky pt-30 pb-10 top-0 left-0 bg-white">
+
+                  <button  class = 'close-btn  registration-close'><i class="fa-solid fa-xmark"></i></button>
+                  <div class="text-center mb-40">
+                    <a href="index.html" class="mb-5 inline-block">
+                      <img src="assets/img/logo.png" alt="logo" class="max-w-[160px]" />
+                    </a>
+                    
+                    <p class="text-base text-body-color text-gary  md:text-lg text-sm">Register Here </p>
+                  </div>
+                </div>
+
+                    <p class=" text-sm mb-10">Select Service Type *</p>
+                    <select name="service-list" id="service-list" class="w-full text-sm bg-[#F4F4FF] outline-none px-10 py-10 border border-lightgary rounded mb-20">
+                        <option value="" disabled selected>-- Select a Service --</option>
+                        
+                    </select>
+
+                    <p class=" text-sm mb-10">Name of the Organization *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+
+                    <p class=" text-sm mb-10">Contact Person Name *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+                    <p class=" text-sm mb-10">Contact Person Name *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+
+                    <p class=" text-sm mb-10">Email *</p>
+                    <input type="email" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+                    <p class=" text-sm mb-10">Mobile No *</p>
+                    <input type="number" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+                    <p class=" text-sm mb-10">State *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+                    <p class=" text-sm mb-10">City *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+                    <p class=" text-sm mb-10">Address *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-20 outline-none" placeholder="">
+
+                    <p class=" text-sm mb-10">Pincode *</p>
+                    <input type="text" class="w-full text-sm bg-[#F4F4FF] py-10 px-10 border border-lightgary rounded mb-30 outline-none" placeholder="">
+
+                   
+                    
+                
+                    <div class="mb-10">
+                        <button type="submit" class="button w-full bg-primary text-white py-7  px-5 rounded hover:bg-opacity-90 transition cursor-pointer">Continue</button>
+                    </div>
+                    <div class="flex  items-center gap-10  mt-10">
+                      <p class="text-center text-sm text-body-color">Already have an account? </p>
+                    <p  class="switch-login text-center font-semibold text-primary text-sm text-primary hover:underline cursor-pointer block">Log In</p>
+                    </div>
+                    
+                    
+
+
+                </form>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Verify email popUp -->
+
+         <div class=" verify-email-popup hide   fixed top-0 left-0 inset-0 bg-[#646464ad]  w-screen h-screen z-1002 ">
+          
+
+          <div class="container flex items-center justify-center relative h-full   ">
+            <div class="verify-email-box relative md:w-[60%] lg:w-1/2 w-full  bg-white shadow rounded-[10px]  p-30">
+              <form action="#">
+                
+                <div class=" sticky">
+                   <button  class = 'close-btn  '><i class="fa-solid fa-xmark"></i></button>
+                   <div class="text-center mb-40">
+                     <a href="index.html" class="mb-5 inline-block">
+                       <img src="assets/img/logo.png" alt="logo" class="max-w-[160px]" />
+                      </a>
+                      <h3 class="text-2xl font-semibold text-secondary">Verify Your Email</h3>
+                      <p class="text-base text-body-color text-gary text-sm">OTP send to your email id abxxxxxx@gmail.com. Please check you email  and verify the OTP.</p>
+                    </div>
+                  </div>
+                    
+                    <div class="mb-6 flex  bg-[#F4F4FF] gap-10 border border-lightgary align-center justify-center rounded p-10 mb-20">
+                        <!-- <label for="password" class="block text-sm font-medium text-dark mb-2">Password</label> -->
+                         <!-- <span class="flex align-center justify-between  text-gary ">
+                             <i class="fa-solid fa-lock"></i>
+
+                         </span> -->
+                        <input type="number" name="otp" id="otp" placeholder="OTP" class="w-full outline-none focus:border-primary focus-visible:shadow-none" />
+                    </div>
+                    <div class="flex  justify-between items-center mb-20">
+                        <div class="form-check flex align-center text-sm justify-center gap-10">
+                            
+                            Don't Recieve OTP ? Resend OTP in<span>60s</span>
+                        </div>
+                        <p class="text-sm text-primary hover:underline cursor-pointer font-semibold">
+                           Resend OTP
+                        </p>
+                    </div>
+                    <div class="mb-10">
+                        <button type="submit" class="button active w-full bg-primary text-white py-7  px-5 rounded hover:bg-opacity-90 transition cursor-pointer">Verify</button>
+                    </div>
+                    <!-- <div class="flex  items-center gap-10  mt-10">
+
+                      <p class="text-center text-sm text-body-color">Don't have an account? </p>
+                      <p  class=" switch-register cursor-pointer text-center font-semibold text-sm text-primary hover:underline block">Sign Up</p>
+                    </div> -->
+                    
+
+
+                </form>
+            </div>
+
+          </div>
+
+        </div>
+
+
+              <div class="header-search-button search-box-outer ">
+             
+                <!-- <a href="javascript:void(0)" class="search-btn">
+                  <i>
+                    <svg
+                      fill="#000000"
+                      width="30px"
+                      height="30px"
+                      viewBox="0 -0.24 28.423 28.423"
+                      data-name="02 - Search Button"
+                      xmlns="http://www.w3.org/2000/svg"
+                      >
+                      <path
+                        id="Path_215"
+                        data-name="Path 215"
+                        d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z"
+                        transform="translate(-2.31 -2.547)"
+                        fill-rule="evenodd"
+                      />
+                      <path
+                      id="Path_216"
+                      data-name="Path 216"
+                      d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z"
+                      transform="translate(-2.31 -2.547)"
+                      fill-rule="evenodd"
+                      />
+                    </svg>
+                  </i>
+                </a> -->
+              </div>
+              <!-- <a href="appointment.html" class="btn xl:block hidden"
+                ><span
+                  >Book Appointment<i class="fa-solid fa-arrow-right"></i></span
+              ></a> -->
+            </div>
+            <a href="javascript:void(0)" id="mobile-menu" class="menu-start">
+              <i class="fa-solid fa-bars"></i>
+            
+            </a>
+
+          </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+          <div class="res-log mb-30">
+            <a href="index-2.html">
+              <img alt="logo" src="assets/img/logo.png" class="w-auto" />
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="JavaScript:void(0)" id="res-cross"></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-[#F4F4FF] pt-100 overflow-hidden">
+      <div class="container">
+        <div class="grid grid-cols-12 items-center">
+          <div class="lg:col-span-6 col-span-12">
+            <div class="relative">
+              <span
+                class="xxl:text-xxl sm:text-lg text-sm uppercase font-bold text-secondary"
+                ><i class="fa-solid fa-heart pr-10 text-[#FC4F4F]"></i> Affordable Care, Better Living</span
+              >
+              <div class="relative">
+                <h1
+                  class="xxl:text-7.5xl xl:text-6xl md:text-5.2xl sm:text-4.3xl text-4.75xl font-bold mb-20 uppercase font-sora text-secondary leading-[1.2]"
+                >
+                  Your <span class="text-primary">Health</span> Your Savings
+                </h1>
+                <img
+                  src="assets/img/shaps-3.png"
+                  alt="img"
+                  class="absolute xl:-top-40 -top-26 xxl:right-0 xl:right-66 lg:right-55 md:right-148 sm:right-50 right-8 shaps-3 animate-bellring max-xl:w-50"
+                />
+              </div>
+              <p
+                class="xxl:text-xxl xl:text-xl text-lg leading-32 xl:leading-34 pb-45 text-gary font-normal"
+              >
+                With MeDiSco Discount Cards, you can access top hospitals, 
+          pharmacies, and diagnostic centers at affordable prices. 
+          Better healthcare doesn’t have to mean higher costs.
+              </p>
+              <div class="flex items-center gap-18 max-xl:flex-wrap">
+                <a href="about.html" class="btn"
+                  ><span>Learn More<i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+                <ul class="flex ml-14 experience-team">
+                  <li class="-ml-15">
+                    <img
+                      src="assets/img/team-1.png"
+                      alt="img"
+                      class="max-xxl:w-50"
+                    />
+                  </li>
+                  <li class="-ml-15">
+                    <img
+                      src="assets/img/team-2.png"
+                      alt="img"
+                      class="max-xxl:w-50"
+                    />
+                  </li>
+                  <li class="-ml-15">
+                    <img
+                      src="assets/img/team-3.png"
+                      alt="img"
+                      class="max-xxl:w-50"
+                    />
+                  </li>
+                  <li class="-ml-15"><a href="javascript:void(0);">+</a></li>
+                </ul>
+                <div>
+                  <h6 class="font-bold text-secondary font-sora text-base">
+                    2000+
+                  </h6>
+                  <span class="text-secondary max-xxl:text-xs"
+                    >   Members Saved</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex xl:gap-60 sm:gap-40 gap-20 pt-50">
+              <div>
+                <h2
+                  data-max="500"
+                  class="counter xl:text-5.1xl md:text-4.5xl text-2.3xl font-bold text-secondary font-sora"
+                >
+                  <span>+</span>
+                </h2>
+                <span
+                  class="text-secondary max-md:text-xs max-md:leading-18 max-md:block"
+                  >     Partner Hospitals</span
+                >
+              </div>
+              <div>
+                <h2
+                  data-max="2"
+                  class="counter xl:text-5.1xl md:text-4.5xl text-2.3xl font-bold text-secondary font-sora"
+                >
+                  <span>K+</span>
+                </h2>
+                <span
+                  class="text-secondary max-md:text-xs max-md:leading-18 max-md:block"
+                  >     Diagnostics Covered</span
+                >
+              </div>
+              <div>
+                <h2
+                  data-max="100"
+                  class="counter xl:text-5.1xl md:text-4.5xl text-2.3xl font-bold text-secondary font-sora"
+                >
+                  <span>%</span>
+                </h2>
+                <span
+                  class="text-secondary max-md:text-xs max-md:leading-18 max-md:block"
+                  > Savings on Bills</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="relative">
+              <img
+                src="assets/img/hero-img.png"
+                alt="img"
+                class="4xl:max-w-[125%] max-xl:mt-150 max-lg:mt-50"
+              />
+              <ul class="shaps">
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-1.png"
+                    alt="img"
+                    class="max-w-[125%] animate-topshap max-md:w-70"
+                  />
+                </li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-2.png"
+                    alt="img"
+                    class="max-w-[125%] animate-topshap max-md:w-130 max-sm:w-70"
+                  />
+                </li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-4.png"
+                    alt="img"
+                    class="max-w-[125%] animate-fa-spin"
+                  />
+                </li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-5.png"
+                    alt="img"
+                    class="max-w-[125%] animate-fa-spin"
+                  />
+                </li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-6.png"
+                    alt="img"
+                    class="max-w-[125%] animate-fa-spin"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Space Section -->
+
+    <section class="lg:pt-100 md:pt-90 pt-50" id="search-space ">
+      <div class="container">
+        <form action="#" id="search-form">
+          <h2
+            class="text-center text-secondary pb-70 xxl:text-6xl xl:text-5xl md:text-4xl sm:text-3xl text-3xl font-extrabold"
+          >
+            Find the Service You Want
+          </h2>
+          <div
+            class="search-form-box flex    flex-row w-[100%] justify-center align-center gap-18"
+          >
+           <div class = "search-form-box-child flex flex-row  justify-center align-center gap-18 w-[100%] ">
+            <div class="border border-lightgary p-10 rounded flex justify-center items-center gap-10 flex-grow  w-[100%] "> 
+              <i class="fa-solid fa-location-dot text-gary"></i>
+              <input
+                type="text"
+                placeholder="Search By State"
+                class="bg-white outline-none flex-grow"
+              />
+            </div>
+            <div  class="border border-lightgary p-10 rounded flex justify-center  items-center gap-10 flex-grow  w-[100%] ">
+                        <i class="fa-solid fa-location-dot text-gary"></i>
+              <input
+                type="text"
+                placeholder="Search By District"
+                class="bg-white outline-none flex-grow"
+              />
+            </div>
+            </div>
+    
+
+          <div class = "flex flex-row  justify-center align-center sm:w-[45%] w-[100%]   gap-10  rounded  ">
+            <div class="  flex justify-center items-center w-full gap-10 p-10 border border-lightgary rounded">
+              <i class="fa-solid fa-magnifying-glass text-gary"></i>
+              <input
+                type="text"
+                placeholder="Search By Service"
+                class="bg-white outline-none flex-grow"
+              />
+            </div>
+            <button type="submit" class="cursor-pointer bg-primary px-20 py-10 text-white rounded "><i class="fa fa-search"></i></i></button>
+                    
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="lg:pt-120 md:pt-80 pt-60" id="services">
+      <div class="container">
+        <div class="xl:pb-50 lg:pb-40 pb-30 w-[fit-content]">
+          <span
+            class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-5 block"
+            ># Our Services</span
+          >
+          <h2
+            class="xl:text-5xl md:text-4xl sm:text-3xl text-2.5xl font-semibold text-secondary font-sora leading-[1.2]"
+          >
+            Services We Offered.
+          </h2>
+        </div>
+        <div class="swiper services-slider">
+          <div class="swiper-wrapper services-list-box">
+
+            
+      <!-- <div class="swiper-slide group"> 
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+              >
+                <i
+                  class="bg-[rgb(240,93,193)] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(240,93,168,0.4)] rounded-full"
+                >
+                  <svg
+                    width="45"
+                    height="47"
+                    viewBox="0 0 45 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.7414 46V40.1304H13.5011C11.8953 40.1304 10.3552 39.512 9.2197 38.4113C8.08421 37.3105 7.4463 35.8176 7.4463 34.2609V28.3913H2.01718C1.85567 28.3906 1.6966 28.353 1.55285 28.2816C1.4091 28.2102 1.28469 28.1071 1.18969 27.9804C1.09764 27.858 1.03684 27.7161 1.01228 27.5665C0.987725 27.4168 1.00011 27.2637 1.04841 27.1196C5.22621 14.5587 8.1325 1.00001 24.319 1.00001C28.4694 0.99527 32.5149 2.26412 35.8759 4.62478C39.2368 6.98545 41.7408 10.3168 43.0291 14.1415C44.3173 17.9663 44.3238 22.0882 43.0474 25.9167C41.7711 29.7452 39.2776 33.0838 35.924 35.4544V46M19.3742 19.3124C18.8539 19.4842 18.3092 19.5766 17.7596 19.5863C17.097 19.5606 16.4461 19.4086 15.8441 19.1391C15.2421 18.8695 14.7007 18.4877 14.2509 18.0153C13.8011 17.5429 13.4517 16.9893 13.2226 16.386C12.9935 15.7828 12.8893 15.1417 12.9158 14.4993C12.9423 13.857 13.099 13.226 13.3771 12.6424C13.6552 12.0588 14.0491 11.534 14.5363 11.098C15.0236 10.6619 15.5947 10.3232 16.217 10.1011C16.8393 9.87907 17.5007 9.77799 18.1633 9.80368C18.5425 8.973 19.1538 8.26165 19.928 7.74996C20.7023 7.23827 21.6087 6.94663 22.5449 6.90797C23.4811 6.8693 24.4098 7.08516 25.2262 7.53116C26.0425 7.97716 26.714 8.63554 27.1647 9.43194C27.9872 9.03822 28.8913 8.83083 29.8086 8.82542C31.2993 8.81556 32.7412 9.33909 33.8584 10.2958C34.9757 11.2524 35.6895 12.575 35.8634 14.0102C36.8362 14.7125 37.6233 15.6284 38.1601 16.6827C38.6969 17.737 38.968 18.8998 38.9514 20.0754C39.0167 21.956 38.3096 23.7849 36.9852 25.1606C35.6607 26.5362 33.8273 27.3461 31.8874 27.4124C30.3858 27.3741 28.935 26.8767 27.7425 25.9912C26.55 25.1057 25.6766 23.8774 25.2474 22.4819C24.0522 22.5941 22.8502 22.351 21.8011 21.7848C20.7519 21.2186 19.9055 20.3562 19.3742 19.3124ZM19.3742 19.3124L19.9596 17.6303C20.4182 16.2986 21.3666 15.1773 22.6237 14.4803L23.8145 13.7172M35.0764 11.7608C30.8178 12.7978 30.1922 14.8326 29.8692 15.6739M34.9956 26.6702C34.5989 24.6339 33.5376 22.7751 31.9682 21.368"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    href="services-details.html"
+                    class="xxl:text-2xl text-xl font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Mental Health</a
+                  >
+                </h4>
+                <p
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Our comprehensive preventive care services are designed to
+                  identify potential.
+                </p>
+                <a
+                  href="services-details.html"
+                  class="service-read-more relative font-bold text-secondary font-sora group-hover:text-white duration-500"
+                  >Read More<i
+                    class="fa-solid fa-arrow-right ml-12 relative"
+                  ></i
+                ></a>
+              </div>
+            </div>  -->
+
+            <!-- <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+              >
+                <i
+                  class="bg-[#69b741] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(105,183,65,0.4)] rounded-full"
+                >
+                  <svg
+                    width="45"
+                    height="45"
+                    viewBox="0 0 45 45"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.75 12.5H26.875M6.75 21.125H21.125M6.75 29.75H13.9375M19.1267 38.375H3.87499C3.11251 38.375 2.38124 38.0722 1.84206 37.533C1.3029 36.9938 1 36.2624 1 35.5V3.87501C1 3.1125 1.3029 2.38123 1.84206 1.84208C2.38124 1.3029 3.11251 1 3.87499 1H24.2473C25.0092 1.00016 25.74 1.3028 26.2789 1.84142L31.7836 7.34609C32.3222 7.88504 32.6248 8.61579 32.625 9.37776V19.2346M37.5501 24.16H30.2821V30.3329H24.1095V37.6009H30.2821V43.7733H37.5501V37.6009H43.7227V30.3329H37.5501V24.16Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    href="services-details.html"
+                    class="xxl:text-2xl text-xl font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Preventive Care</a
+                  >
+                </h4>
+                <p
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Our comprehensive preventive care services are designed to
+                  identify potential.
+                </p>
+                <a
+                  href="services-details.html"
+                  class="relative font-bold text-secondary font-sora group-hover:text-white duration-500"
+                  >Read More<i
+                    class="fa-solid fa-arrow-right ml-12 relative"
+                  ></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+              >
+                <i
+                  class="bg-[#58CBF2] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(88,203,242,0.4)] rounded-full"
+                >
+                  <svg
+                    width="50"
+                    height="47"
+                    viewBox="0 0 50 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.3078 36.9221L17.6155 46M28.6922 36.9221L32.3844 46M13.923 45.9999H36.0767M46.8029 1H2.84615C1.82655 1 1 1.89349 1 2.99568V34.9263C1 36.0285 1.82655 36.9222 2.84615 36.9222H47.1538C48.1734 36.9222 49 36.0285 49 34.9263V3.16069C49 1.96738 48.0164 1 46.8029 1ZM29.177 7.87495H20.8225V14.8529H13.7267V23.069H20.8225V30.0472H29.177V23.069H36.2723V14.8529H29.177V7.87495Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    href="services-details.html"
+                    class="xxl:text-2xl text-xl font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Surgical Care</a
+                  >
+                </h4>
+                <p
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Our comprehensive preventive care services are designed to
+                  identify potential.
+                </p>
+                <a
+                  href="services-details.html"
+                  class="relative font-bold text-secondary font-sora group-hover:text-white duration-500"
+                  >Read More<i
+                    class="fa-solid fa-arrow-right ml-12 relative"
+                  ></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+              >
+                <i
+                  class="bg-[#9B52E1] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(155,82,225,0.4)] rounded-full"
+                >
+                  <svg
+                    width="43"
+                    height="47"
+                    viewBox="0 0 43 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.5055 4.91687C24.5373 7.91677 27.8112 8.03215 28.6603 8.03215M41.9941 13.002C42.0946 9.9199 40.9063 6.9257 38.6901 4.67585C36.4739 2.426 33.4103 1.10411 30.1713 1C28.5156 1.01401 26.8829 1.36949 25.3855 2.04193C23.8881 2.71438 22.5618 3.6878 21.4982 4.89506C20.4353 3.68769 19.1098 2.71415 17.6131 2.04168C16.1163 1.36919 14.484 1.0138 12.8289 1C9.58949 1.10315 6.52541 2.42472 4.30893 4.6748C2.09244 6.92486 0.904599 9.91963 1.006 13.002C1.31925 17.6149 2.97392 22.0541 5.78529 25.8241C6.1041 26.2471 6.30386 26.741 6.36558 27.2582C6.42728 27.7756 6.34889 28.2993 6.13785 28.7798C4.81709 31.8659 4.14498 35.1685 4.15955 38.5006V42.2504C4.15955 43.2447 4.57475 44.1986 5.31381 44.9018C6.0529 45.6051 7.05528 46 8.1005 46C9.1457 46 10.1481 45.6051 10.8872 44.9018C11.6262 44.1986 12.0414 43.2447 12.0414 42.2504C11.9187 39.8408 12.783 37.4796 14.4524 35.6639C16.1219 33.8483 18.4664 32.7193 20.9928 32.5146C22.3433 32.4468 23.6933 32.6545 24.9526 33.1232C26.2119 33.592 27.3515 34.3113 28.2952 35.2331C29.2386 36.1549 29.9643 37.2577 30.4237 38.4678C30.8831 39.6782 31.0656 40.9677 30.9587 42.2504C30.9587 43.2447 31.374 44.1986 32.1131 44.9018C32.8522 45.6051 33.8545 46 34.8997 46C35.9448 46 36.9473 45.6051 37.6864 44.9018C38.4255 44.1986 38.8406 43.2447 38.8406 42.2504V38.4894C38.858 34.9485 38.0975 31.4432 36.6077 28.1982C36.3539 27.7068 36.2428 27.1599 36.2863 26.6139C36.3297 26.068 36.5259 25.543 36.8545 25.0934C39.7722 21.6271 41.5588 17.4236 41.9941 13.002Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    href="services-details.html"
+                    class="xxl:text-2xl text-xl font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Dental Checkup</a
+                  >
+                </h4>
+                <p
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Our comprehensive preventive care services are designed to
+                  identify potential.
+                </p>
+                <a
+                  href="services-details.html"
+                  class="relative font-bold text-secondary font-sora group-hover:text-white duration-500"
+                  >Read More<i
+                    class="fa-solid fa-arrow-right ml-12 relative"
+                  ></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+              >
+                <i
+                  class="bg-[#69b741] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(105,183,65,0.4)] rounded-full"
+                >
+                  <svg
+                    width="45"
+                    height="45"
+                    viewBox="0 0 45 45"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.75 12.5H26.875M6.75 21.125H21.125M6.75 29.75H13.9375M19.1267 38.375H3.87499C3.11251 38.375 2.38124 38.0722 1.84206 37.533C1.3029 36.9938 1 36.2624 1 35.5V3.87501C1 3.1125 1.3029 2.38123 1.84206 1.84208C2.38124 1.3029 3.11251 1 3.87499 1H24.2473C25.0092 1.00016 25.74 1.3028 26.2789 1.84142L31.7836 7.34609C32.3222 7.88504 32.6248 8.61579 32.625 9.37776V19.2346M37.5501 24.16H30.2821V30.3329H24.1095V37.6009H30.2821V43.7733H37.5501V37.6009H43.7227V30.3329H37.5501V24.16Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    href="services-details.html"
+                    class="xxl:text-2xl text-xl font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Preventive Care</a
+                  >
+                </h4>
+                <p
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Our comprehensive preventive care services are designed to
+                  identify potential.
+                </p>
+                <a
+                  href="services-details.html"
+                  class="relative font-bold text-secondary font-sora group-hover:text-white duration-500"
+                  >Read More<i
+                    class="fa-solid fa-arrow-right ml-12 relative"
+                  ></i
+                ></a>
+              </div>
+            </div> -->
+          </div>
+          <div class="swiper-button">
+            <div class="services-swiper-button-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="services-swiper-button-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:py-120 md:py-80 py-60" id="about">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full group">
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/photo-1-card.png"
+                  alt="img"
+                  class="w-full group-hover:scale-[1.1] group-hover:rotate-[3deg] duration-500"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="lg:ml-16">
+              <span
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-6 block"
+                ># About Us</span
+              >
+              <h2
+                class="xxl:text-4.8xl xl:text-4xl sm:text-3xl text-2xl font-semibold text-secondary xl:leading-[1.2] font-sora"
+              >
+              Making Healthcare Affordable and Accessible.
+              </h2>
+              <p
+                class="text-base leading-28 text-gary font-normal xl:mt-25 mt-20 leading-30"
+              >
+             At MeDiSco, we believe quality healthcare should never be out of reach. 
+      Our medical discount cards help individuals and families save on hospital 
+      visits, medicines, diagnostics, and wellness services. By partnering with 
+      trusted healthcare providers, we bring affordability, convenience, and 
+      support under one roof—empowering you to focus on your health without 
+      financial stress.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 lg:mt-40 mt-15 gap-25">
+          <div class="lg:col-span-5 col-span-12">
+            <div class="max-lg:pb-15">
+              <ul class="pt-40 pb-34">
+                <li
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                 Making healthcare affordable with exclusive discounts
+                </li>
+                <li
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                 Partnering with trusted hospitals, pharmacies, and wellness centers
+                </li>
+                <li
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Ensuring savings on medicines, diagnostics, and treatments
+                </li>
+                <li
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                 Empowering individuals and families with accessible healthcare
+                </li>
+              </ul>
+              <div class="flex items-center">
+                <a href="about.html" class="btn two"
+                  ><span
+                    >More About Us<i class="fa-solid fa-arrow-right"></i></span
+                ></a>
+                <img
+                  src="assets/img/signature.png"
+                  alt="img"
+                  class="sm:ml-30 ml-20 sm:border-l sm:border-[#D8D8D8] sm:pl-30 py-20 sm:py-10"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div class="w-full group">
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/about-2.jpg"
+                  alt="img"
+                  class="w-full group-hover:scale-[1.1] group-hover:rotate-[3deg] duration-500"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-3 col-span-12 flex justify-center flex-wrap max-lg:gap-30"
+          >
+            <div class="sm:pb-17 lg:flex justify-center flex-wrap">
+              <div class="xl:w-150 progressbar text-center">
+                <div class="circle" data-percent="85">
+                  <div
+                    class="text-secondary absolute top-[44%] left-1/2 -mt-20 -ml-86 w-full text-center xl:leading-40 leading-28 text-4xl xl:[transform:translate(10px,10px)] [transform:translate(5px,10px)] font-bold"
+                  >
+                    85%
+                  </div>
+                </div>
+              </div>
+              <h2
+                class="xxl:text-lg sm:text-base text-sm font-semibold capitalize font-sora text-secondary xxl:pt-10"
+              >
+              Partnered providers
+              </h2>
+            </div>
+            <div class="sm:pb-17 lg:flex justify-center flex-wrap">
+              <div class="xl:w-150 progressbar text-center">
+                <div class="circle" data-percent="60">
+                  <div
+                    class="text-secondary absolute top-[44%] left-1/2 -mt-20 -ml-86 w-full text-center xl:leading-40 leading-28 text-4xl xl:[transform:translate(10px,10px)] [transform:translate(5px,10px)] font-bold"
+                  >
+                    60%
+                  </div>
+                </div>
+              </div>
+              <h2
+                class="xxl:text-lg sm:text-base text-sm font-semibold capitalize font-sora text-secondary xxl:pt-10"
+              >
+                    Average savings
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex overflow-hidden relative z-[11]">
+      <div class="py-20 bg-primary flex">
+        <div class="animate-scroll-one flex">
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-3.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+                        Discounted Care
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+        Partner Hospitals
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-1.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+                 Medicine Savings
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+                   Wellness & More
+            </h3>
+          </div>
+        </div>
+        <div class="animate-scroll-one ml-60 gap-30 flex items-center">
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-3.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+                 Discounted Care
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+               Partner Hospitals
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-1.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+               Medicine Savings
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+             Wellness & More
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="gap-30 flex items-center -mt-70 z-[1] md:pb-120 pb-70 -ml-10 overflow-hidden relative"
+    >
+      <div class="flex bg-secondary py-20 rotate-[357deg]">
+        <div class="animate-scroll-two flex">
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-3.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Medical group
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Core Services
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-1.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Technology
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Health blogs
+            </h3>
+          </div>
+        </div>
+        <div class="animate-scroll-two ml-[-100%] gap-30 flex items-center">
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-3.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Medical group
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Core Services
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-1.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Technology
+            </h3>
+          </div>
+          <div
+            class="lg:ml-60 ml-33 w-[max-content] lg:gap-30 gap-20 flex items-center"
+          >
+            <img
+              src="assets/img/health-img-2.png"
+              alt="img"
+              class="max-xxl:w-60 max-lg:w-36"
+            />
+            <h3
+              class="xxl:text-5.2xl lg:text-4.65xl text-3xl uppercase font-bold text-white font-sora"
+            >
+              Health blogs
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="xxl:pb-200 lg:pb-120 md:pb-80 pb-60">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="text-end relative before:absolute before:w-[71%] before:h-full before:bg-primary before:-left-38 before:z-[-1] before:rotate-[5deg] before:top-[13%] mt-50 lg:mr-40 max-lg:before:hidden"
+            >
+              <figure class="overflow-hidden">
+                <img src="assets/img/why-us-photo-1.png" alt="img" class="w-full" />
+              </figure>
+              <div
+                class="absolute xl:top-[-15%] xl:left-[-10%] lg:top-[-11%] lg:left-[-11%] top-[-12%] left-[-6%] xl:size-200 size-170 bg-white rounded-full flex items-center justify-center max-md:size-165"
+              >
+                <img
+                  alt="img"
+                  src="assets/img/choose-us-logo.png"
+                  class="size-80 p-17 bg-primary rounded-full"
+                />
+                <img
+                  alt="img"
+                  src="assets/img/circle-image.png"
+                  class="circle absolute size-auto bg-transparent p-17 mx-auto mt-10 text-center z-[1] animate-fa-spin"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="pb-50 w-[fit-content]">
+              <span
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-6 block"
+                ># Why Choose Us</span
+              >
+              <h2
+                class="xl:text-5xl md:text-4xl sm:text-3xl text-2.5xl font-semibold text-secondary font-sora leading-[1.2]"
+              >
+                Affordable Care Backed by Trusted Partners.
+              </h2>
+              <p
+                class="text-base leading-28 text-gary font-normal border-l-3 border-primary pl-27 mt-25"
+              >
+                    At MeDiSco, we focus on reducing the financial burden of healthcare. With
+      exclusive discounts on hospitals, medicines, diagnostics, and wellness
+      services, our platform bridges the gap between quality healthcare and
+      affordability—ensuring that individuals and families get the care they
+      need without compromise.
+              </p>
+            </div>
+            <div
+              class="sm:flex gap-20 mb-25 border-b border-[#D8D8D8] pb-25 group"
+            >
+              <i
+                class="bg-[#F05DA8] size-90 flex items-center justify-center mb-25 relative shadow-[#f05da866_0px_0px_24px_0px] rounded-full"
+              >
+                <svg
+                  class="size-90 p-20 group-hover:[transform:rotate3d(1,1,1,360deg)] duration-500"
+                  width="45"
+                  height="49"
+                  viewBox="0 0 45 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.762 18.3703C33.762 18.0993 33.6541 17.8395 33.4621 17.6479C33.2701 17.4563 33.0097 17.3486 32.7381 17.3486H27.6191V12.2402C27.6191 11.9693 27.5112 11.7094 27.3192 11.5178C27.1272 11.3262 26.8668 11.2185 26.5953 11.2185H18.4048C18.1333 11.2185 17.8729 11.3262 17.6809 11.5178C17.4889 11.7094 17.381 11.9693 17.381 12.2402V17.3486H12.2619C11.9904 17.3486 11.73 17.4563 11.538 17.6479C11.346 17.8395 11.2381 18.0993 11.2381 18.3703V26.5437C11.2381 26.8147 11.346 27.0746 11.538 27.2662C11.73 27.4578 11.9904 27.5654 12.2619 27.5654H17.381V32.6738C17.381 32.9448 17.4889 33.2047 17.6809 33.3963C17.8729 33.5879 18.1333 33.6955 18.4048 33.6955H26.5953C26.8668 33.6955 27.1272 33.5879 27.3192 33.3963C27.5112 33.2047 27.6191 32.9448 27.6191 32.6738V27.5654H32.7381C33.0097 27.5654 33.2701 27.4578 33.4621 27.2662C33.6541 27.0746 33.762 26.8147 33.762 26.5437V18.3703Z"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1 7.69417V23.2993C1.06016 28.4557 2.70685 33.4691 5.71707 37.6605C8.72728 41.8519 12.9556 45.0189 17.8294 46.7326L20.1248 47.5785C21.6582 48.1405 23.3418 48.1405 24.8752 47.5785L27.1706 46.7326C32.0444 45.0189 36.2727 41.8519 39.2829 37.6605C42.2932 33.4691 43.9398 28.4557 44 23.2993V7.69417C43.9979 7.08107 43.8156 6.48205 43.4757 5.97136C43.1357 5.46067 42.6531 5.06076 42.0875 4.82121C35.8846 2.23873 29.2209 0.939488 22.5 1.00216C15.7791 0.939488 9.11545 2.23873 2.91248 4.82121C2.34694 5.06076 1.86428 5.46067 1.52432 5.97136C1.18436 6.48205 1.00206 7.08107 1 7.69417Z"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </i>
+              <div>
+                <h4
+                  class="font-bold xl:text-2.3xl text-2xl pb-7 text-secondary leading-[1.2] font-sora"
+                >
+                   Wide Network Access
+                </h4>
+                <p class="text-base leading-30 text-gary fobt-normal">
+                  MeDiSco partners with hospitals, pharmacies, diagnostic labs, and
+        wellness centers to ensure members get trusted services with exclusive
+        discounts at every step of care.
+                </p>
+              </div>
+            </div>
+            <div class="sm:flex gap-20 group">
+              <i
+                class="bg-[#58CBF2] size-90 flex items-center justify-center mb-25 relative shadow-[#f05da866_0px_0px_24px_0px] rounded-full"
+              >
+                <svg
+                  class="size-90 p-20 group-hover:[transform:rotate3d(1,1,1,360deg)] duration-500"
+                  width="49"
+                  height="49"
+                  viewBox="0 0 49 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.1661 36.9778C15.9035 36.3659 17.5836 35.6021 19.1869 34.6952M43.629 45.9939L42.7544 47.8331L32.2999 41.1938C31.3479 40.5881 30.6499 39.6555 30.3372 38.5713C30.0245 37.4871 30.1186 36.3261 30.6018 35.3064C31.0843 34.2865 31.9227 33.478 32.9595 33.0328C33.9962 32.5877 35.1598 32.5365 36.2316 32.889L48 36.7594L47.1254 38.5985M26.523 29.7911C31.9403 25.6919 40.8478 17.9388 40.8478 11.2811C40.8478 0.0745119 26.7846 -2.98257 22.4565 7.2043C18.1284 -2.98257 4.0652 0.0745119 4.0652 11.2811C4.0652 20.8467 21.7066 32.1841 22.4565 32.6745C24.8617 34.248 29.3185 36.1485 30.4731 35.6049M1 40.8477C1 42.7446 1.75353 44.5638 3.09483 45.9052C4.43612 47.2465 6.25531 48 8.15218 48C10.0491 48 11.8682 47.2465 13.2095 45.9052C14.5508 44.5638 15.3044 42.7446 15.3044 40.8477C15.3044 38.9508 14.5508 37.1316 13.2095 35.7903C11.8682 34.449 10.0491 33.6955 8.15218 33.6955C6.25531 33.6955 4.43612 34.449 3.09483 35.7903C1.75353 37.1316 1 38.9508 1 40.8477ZM6.10864 40.848C6.10864 41.39 6.32394 41.9097 6.70716 42.293C7.09039 42.6762 7.61016 42.8915 8.15212 42.8915C8.69409 42.8915 9.21385 42.6762 9.59708 42.293C9.98031 41.9097 10.1956 41.39 10.1956 40.848C10.1956 40.306 9.98031 39.7862 9.59708 39.403C9.21385 39.0198 8.69409 38.8045 8.15212 38.8045C7.61016 38.8045 7.09039 39.0198 6.70716 39.403C6.32394 39.7862 6.10864 40.306 6.10864 40.848Z"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </i>
+              <div>
+                <h4
+                  class="font-bold xl:text-2.3xl text-2xl pb-7 text-secondary leading-[1.2] font-sora"
+                >
+                    Real Savings
+                </h4>
+                <p class="text-base leading-30 text-gary fobt-normal">
+                With discounts on doctor visits, medicines, diagnostics, and wellness
+        services, MeDiSco ensures that quality healthcare is accessible without
+        overwhelming medical costs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="overflow-hidden relative bg-[#F4F4FF] lg:py-120 md:py-80 py-60 bg-[url(../img/graph.png)] section-pricing"
+    >
+      <div class="container">
+        <div class="text-center lg:mx-auto lg:w-[60%] w-full pb-50">
+          <span
+            class="pb-10 block font-sora font-semibold font-sora text-primary xxl:text-xxl xl:text-xl sm:text-lg text-base"
+            ># Pricing Plans</span
+          >
+          <h2
+            class="xl:text-5xl md:text-4xl sm:text-3xl text-2.5xl font-semibold text-secondary font-sora leading-[1.2]"
+          >
+            Simple & Affordable Options for Everyone
+          </h2>
+        </div>
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-4 col-span-12">
+            <div
+              class="bg-white p-30 relative z-[1] hover:shadow-[0px_0px_30px_0px_rgba(0,0,0,0.1)] duration-500"
+            >
+              <img
+                src="assets/img/pricing-plan-shap.png"
+                class="absolute right-30 top-30"
+                alt="img"
+              />
+              <h5 class="font-bold pb-5 text-secondary font-sora text-xl">
+                Basic Plan
+              </h5>
+              <h3 class="text-5.2xl font-bold pb-10 text-secondary font-sora">
+                ₹590<span class="pl-6 text-base">/Year</span>
+              </h3>
+                      <span>Discount Card Access</span>
+
+              <ul
+                class="list-style border-t border-[#D8D8D8] pt-26 mt-21 pb-30 relative before:absolute before:w-1/2 before:bg-primary before:-top-px before:h-px"
+              >
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                  Discounts on medicines at partnered pharmacies
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+   Savings on doctor consultations
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                  Access to diagnostic test discounts
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                    Use at select healthcare providers
+                </li>
+              
+              </ul>
+              <a href="pricing-table.html" class="btn two"
+                ><span
+                  >Pick This Plan<i
+                    class="fa-solid fa-arrow-right"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div
+              class="pricing-plan two bg-primary p-30 relative z-[1] hover:shadow-[0px_0px_30px_0px_rgba(0,0,0,0.1)] duration-500"
+            >
+              <img
+                src="assets/img/pricing-plan-shap-1.png"
+                class="absolute right-30 top-30"
+                alt="img"
+              />
+              <h5 class="font-bold pb-5 text-white font-sora text-xl">
+                        Standard Plan
+              </h5>
+              <h3 class="text-5.2xl font-bold pb-10 text-white font-sora">
+                 ₹1490<span class="pl-6 text-base">/Year</span>
+              </h3>
+                     <span class="text-white">Extended Savings</span>
+              <ul
+                class="list-style border-t border-[#D8D8D8] pt-26 mt-21 pb-30 relative"
+              >
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-white max-xxl:text-sm"
+                >
+                    All benefits of the Basic Plan
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-white max-xxl:text-sm"
+                >
+                     Bigger discounts on hospital services
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-white max-xxl:text-sm"
+                >
+                Dental & vision care savings
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-white max-xxl:text-sm"
+                >
+                       Priority access at partnered centers
+                </li>
+               
+              </ul>
+              <a href="pricing-table.html" class="btn two"
+                ><span
+                  >Pick This Plan<i
+                    class="fa-solid fa-arrow-right"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div
+              class="bg-white p-30 relative z-[1] hover:shadow-[0px_0px_30px_0px_rgba(0,0,0,0.1)] duration-500"
+            >
+              <img
+                src="assets/img/pricing-plan-shap.png"
+                class="absolute right-30 top-30"
+                alt="img"
+              />
+              <h5 class="font-bold pb-5 text-secondary font-sora text-xl">
+                 Premium Plan
+              </h5>
+              <h3 class="text-5.2xl font-bold pb-10 text-secondary font-sora">
+                 ₹2990<span class="pl-6 text-base">/Year</span>
+              </h3>
+              <span>Comprehensive Coverage</span>
+              <ul
+                class="list-style border-t border-[#D8D8D8] pt-26 mt-21 pb-30 relative before:absolute before:w-1/2 before:bg-primary before:-top-px before:h-px"
+              >
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                     All benefits of the Standard Plan
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                                Higher discounts on major treatments
+
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                   Rehab, wellness & spa discounts included
+                </li>
+                <li
+                  class="font-normal pb-21 font-sora pl-20 relative text-secondary max-xxl:text-sm"
+                >
+                   Extended partner network coverage
+                </li>
+              
+              </ul>
+              <a href="pricing-table.html" class="btn two"
+                ><span
+                  >Pick This Plan<i
+                    class="fa-solid fa-arrow-right"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="shaps">
+        <li class="absolute">
+          <img src="assets/img/shaps-7.png" alt="img" class="animate-fa-spin" />
+        </li>
+        <li class="absolute">
+          <img src="assets/img/shaps-8.png" alt="img" class="animate-fa-spin" />
+        </li>
+        <li class="absolute">
+          <img
+            src="assets/img/dots-img.png"
+            alt="img"
+            class="animate-fa-spin"
+          />
+        </li>
+        <li class="absolute">
+          <img
+            src="assets/img/dots-img.png"
+            alt="img"
+            class="animate-fa-spin"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <section class="lg:py-120 md:py-80 py-60">
+      <div class="container">
+        <div class="text-center lg:mx-auto lg:w-[60%] w-full pb-50">
+          <span
+            class="pb-10 block font-sora font-semibold capitalize xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary"
+            ># Testimonials</span
+          >
+          <h2
+            class="xl:text-5xl md:text-4xl sm:text-3xl text-2.5xl font-semibold text-secondary font-sora leading-[1.2]"
+          >
+            What Our Members Say
+          </h2>
+        </div>
+        <div
+          class="swiper review-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden relative lg:before:absolute lg:before:w-px lg:before:h-full lg:before:bg-[#bfbfbf] lg:before:left-1/2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative">
+                <ul class="flex text-sm gap-4 mb-10">
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                </ul>
+                <p
+                  class="md:text-2xl sm:text-xl text-lg leading-34 font-medium pb-21 text-gary"
+                >
+                  MeDiSco helped me save on my monthly medicines. The discount card
+              works instantly at my local pharmacy—super convenient and
+              affordable!
+                </p>
+                <div class="flex items-center gap-x-15">
+                  <img
+                    src="assets/img/review-img-1.jpg"
+                    alt="img"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <h5
+                      class="text-base font-bold pb-4 text-secondary font-sora leading-[1.2]"
+                    >
+                     Ananya Sharma
+                    </h5>
+                    <span>College Student</span>
+                  </div>
+                </div>
+                <img
+                  src="assets/img/quotes.png"
+                  alt="quotes"
+                  class="absolute right-[0%] bottom-[3%] bg-transparent mt-50"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative">
+                <ul class="flex text-sm gap-4 mb-10">
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                </ul>
+                <p
+                  class="md:text-2xl sm:text-xl text-lg leading-34 font-medium pb-21 text-gary"
+                >
+                   I don’t have insurance, but with MeDiSco, I still manage to save a
+              lot on doctor visits and diagnostic tests. Highly recommended!
+                </p>
+                <div class="flex items-center gap-x-15">
+                  <img
+                    src="assets/img/review-img-2.jpg"
+                    alt="img"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <h5
+                      class="text-base font-bold pb-4 text-secondary font-sora leading-[1.2]"
+                    >
+                            Rajesh Kumar
+                    </h5>
+                    <span>Small Business Owner</span>
+                  </div>
+                </div>
+                <img
+                  src="assets/img/quotes.png"
+                  alt="quotes"
+                  class="absolute right-[0%] bottom-[3%] bg-transparent mt-50"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative">
+                <ul class="flex text-sm gap-4 mb-10">
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                </ul>
+                <p
+                  class="md:text-2xl sm:text-xl text-lg leading-34 font-medium pb-21 text-gary"
+                >
+                    My family uses the Premium Plan. We’ve saved thousands on
+              treatments and even got discounts on dental and vision care.
+                </p>
+                <div class="flex items-center gap-x-15">
+                  <img
+                    src="assets/img/team-3.png"
+                    alt="img"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <h5
+                      class="text-base font-bold pb-4 text-secondary font-sora leading-[1.2]"
+                    >
+                      Rupesh Mehta
+                    </h5>
+                        <span>Working Professional</span>
+                  </div>
+                </div>
+                <img
+                  src="assets/img/quotes.png"
+                  alt="quotes"
+                  class="absolute right-[0%] bottom-[3%] bg-transparent mt-50"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:absolute relative bg-[#F4F4FF] z-[1] size-78 rounded-full left-1/2 lg:top-1/2 [transform:translate(-50%,-50%)] max-lg:mt-48"
+          >
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container xl:pb-120 lg:pb-100 md:pb-80 pb-60">
+      <div class="swiper brand-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-1.png" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-3.png" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-2.png" alt="img" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-4.png" alt="img" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-6.png" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-5.png" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/brand-logo-3.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="lg:pt-120 md:pt-80 pt-60 relative bg-[#F4F4FF]">
+      <div class="container">
+        <div
+          class="bg-primary max-lg:flex-wrap max-lg:gap-20 sm:p-50 p-20 flex items-center rounded-[20px] w-full lg:justify-between"
+        >
+          <div class="lg:w-1/2 w-full">
+            <h2
+              class="xxl:text-5xl xl:text-[42px] sm:text-4xl text-2xxl font-bold font-sora text-white sm:leading-44 leading-34 xl:leading-62 max-lg:text-center"
+            >
+              Stay Updated With Healthcare Savings & Offers.
+            </h2>
+          </div>
+          <div class="subscribe-form max-lg:mx-auto max-sm:w-full">
+            <form
+              class="relative w-full dzSubscribe"
+              action="https://madula.dexignlab.com/tailwind/demo/assets/script/mailchamp.php"
+              method="post"
+            >
+              <div class="dzSubscribeMsg"></div>
+              <div class="relative flex flex-wrap items-stretch w-full">
+                <input
+                  class="bg-white w-full lg:h-80 sm:h-60 h-55 sm:pl-30 pl-15 sm:pr-167 pr-122 rounded-[12px] outline-none max-sm:text-sm"
+                  required="required"
+                  type="email"
+                  name="dzEmail"
+                  placeholder="Enter Your Email"
+                />
+                <button
+                  name="submit"
+                  id="submit"
+                  type="submit"
+                  class="btn absolute lg:right-7 lg:top-11.5 right-3 top-3.5 rounded-[10px]"
+                >
+                  <span>Subscribe</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="lg:py-100 md:py-80 py-60">
+          <div class="grid grid-cols-12 gap-25">
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div class="footre-logo">
+                <a href="index-2.html"
+                  ><img src="assets/img/logo.png" alt="img"
+                /></a>
+                <p
+                  class="pt-14 pb-30 text-base leading-30 text-gary font-normal"
+                >
+                  MeDiSco is dedicated to making healthcare affordable and accessible. 
+      With our medical discount cards, you can save on hospitals, medicines, 
+      diagnostics, and wellness services—all under one trusted platform.
+                </p>
+                <ul class="flex gap-x-10">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-80 xl:pl-50 sm:pl-40 xxl:ml-40 sm:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                >
+                  Link
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <a
+                      href="about.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                    >
+                      About Us</a
+                    >
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="services.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-80 xl:pl-50 lg:pl-40 xxl:ml-40 lg:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                >
+                  services
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <a
+                      href="services-details.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                    >
+                      Discount Cards</a
+                    >
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="services-details.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      >Hospital Partnerships</a
+                    >
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="services-details.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      >Pharmacy Savings</a
+                    >
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="services-details.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      >Diagnostic Discounts</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="appointment.html"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      >Wellness Packages</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-70 xl:pl-40 sm:pl-30 xxl:ml-40 sm:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                >
+                  contact uS
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <h6
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="10"
+                          height="12"
+                          viewBox="0 0 10 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 3.00075C4.6066 3.00075 4.22204 3.11804 3.89494 3.33778C3.56784 3.55752 3.3129 3.86985 3.16235 4.23527C3.0118 4.6007 2.97241 5.00279 3.04916 5.39072C3.12591 5.77865 3.31535 6.13499 3.59352 6.41467C3.8717 6.69435 4.22611 6.88481 4.61195 6.96198C4.99779 7.03914 5.39773 6.99954 5.76118 6.84818C6.12463 6.69681 6.43528 6.44049 6.65384 6.11162C6.87241 5.78275 6.98906 5.3961 6.98906 5.00058C6.98906 4.47019 6.7795 3.96152 6.40648 3.58648C6.03346 3.21144 5.52753 3.00075 5 3.00075ZM5 6.00049C4.8033 6.00049 4.61102 5.94185 4.44747 5.83197C4.28392 5.7221 4.15645 5.56594 4.08117 5.38323C4.0059 5.20052 3.98621 4.99947 4.02458 4.8055C4.06295 4.61154 4.15767 4.43337 4.29676 4.29353C4.43585 4.15369 4.61306 4.05846 4.80598 4.01988C4.9989 3.98129 5.19886 4.00109 5.38059 4.07678C5.56232 4.15246 5.71764 4.28062 5.82692 4.44505C5.9362 4.60949 5.99453 4.80281 5.99453 5.00058C5.99453 5.26577 5.88975 5.5201 5.70324 5.70762C5.51673 5.89514 5.26377 6.00049 5 6.00049Z"
+                            fill="#021935"
+                          />
+                          <path
+                            d="M5 12C4.58128 12.0021 4.16813 11.9034 3.79516 11.712C3.42219 11.5206 3.10025 11.2422 2.85629 10.9001C0.961213 8.27179 0 6.29596 0 5.02707C0 3.69381 0.526784 2.41515 1.46447 1.47239C2.40215 0.529636 3.67392 0 5 0C6.32608 0 7.59785 0.529636 8.53553 1.47239C9.47322 2.41515 10 3.69381 10 5.02707C10 6.29596 9.03879 8.27179 7.14371 10.9001C6.89975 11.2422 6.57781 11.5206 6.20484 11.712C5.83187 11.9034 5.41873 12.0021 5 12ZM5 1.09141C3.96192 1.0926 2.96669 1.50773 2.23266 2.24574C1.49862 2.98375 1.08572 3.98436 1.08453 5.02807C1.08453 6.03298 2.02586 7.89132 3.73446 10.2606C3.87951 10.4615 4.0698 10.625 4.28976 10.7377C4.50973 10.8504 4.75311 10.9092 5 10.9092C5.24689 10.9092 5.49027 10.8504 5.71024 10.7377C5.9302 10.625 6.12049 10.4615 6.26554 10.2606C7.97414 7.89132 8.91547 6.03298 8.91547 5.02807C8.91428 3.98436 8.50138 2.98375 7.76734 2.24574C7.03331 1.50773 6.03808 1.0926 5 1.09141Z"
+                            fill="#021935"
+                          />
+                        </svg>
+                      </i>
+                      Address
+                    </h6>
+                    <span
+                      class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                      >1901 Thornridge Cir. Shiloh</span
+                    >
+                  </li>
+                  <li class="pb-16">
+                    <h6
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.49103 0.501622C6.49103 0.368796 6.5438 0.24141 6.63772 0.147487C6.73164 0.0535649 6.85902 0.000799798 6.99185 0.000799798C8.31964 0.00225799 9.59264 0.530377 10.5315 1.46929C11.4704 2.40819 11.9985 3.68121 12 5.00903C12 5.14185 11.9472 5.26924 11.8533 5.36316C11.7594 5.45708 11.632 5.50985 11.4992 5.50985C11.3664 5.50985 11.239 5.45708 11.1451 5.36316C11.0511 5.26924 10.9984 5.14185 10.9984 5.00903C10.9972 3.94678 10.5747 2.92838 9.82357 2.17726C9.07246 1.42614 8.05408 1.00364 6.99185 1.00245C6.85902 1.00245 6.73164 0.94968 6.63772 0.855758C6.5438 0.761835 6.49103 0.634449 6.49103 0.501622ZM6.99185 3.00574C7.52314 3.00574 8.03268 3.2168 8.40837 3.59249C8.78405 3.96818 8.99511 4.47772 8.99511 5.00903C8.99511 5.14185 9.04787 5.26924 9.14179 5.36316C9.23571 5.45708 9.3631 5.50985 9.49592 5.50985C9.62875 5.50985 9.75613 5.45708 9.85005 5.36316C9.94397 5.26924 9.99674 5.14185 9.99674 5.00903C9.99594 4.21231 9.6791 3.44846 9.11575 2.88509C8.55239 2.32173 7.78855 2.00489 6.99185 2.00409C6.85902 2.00409 6.73164 2.05686 6.63772 2.15078C6.5438 2.2447 6.49103 2.37209 6.49103 2.50491C6.49103 2.63774 6.5438 2.76513 6.63772 2.85905C6.73164 2.95297 6.85902 3.00574 6.99185 3.00574ZM11.5458 8.38407C11.836 8.67511 11.999 9.06935 11.999 9.48037C11.999 9.89139 11.836 10.2856 11.5458 10.5767L11.09 11.102C6.98834 15.029 -2.99291 5.05009 0.873384 0.935335L1.44932 0.434512C1.74068 0.152387 2.1314 -0.00368303 2.53694 6.60132e-05C2.94249 0.00381505 3.33026 0.167082 3.61635 0.454545C3.63188 0.470071 4.55989 1.67555 4.55989 1.67555C4.83525 1.96484 4.98854 2.34912 4.98788 2.74851C4.98723 3.14791 4.83269 3.53169 4.55638 3.82007L3.97644 4.54927C4.29738 5.32911 4.76926 6.03784 5.36495 6.63474C5.96064 7.23165 6.66841 7.70496 7.44759 8.02748L8.18128 7.44403C8.4697 7.16793 8.85341 7.01357 9.25268 7.01301C9.65194 7.01245 10.0361 7.16573 10.3253 7.44102C10.3253 7.44102 11.5302 8.36854 11.5458 8.38407ZM10.8566 9.11227C10.8566 9.11227 9.65819 8.19025 9.64266 8.17473C9.53949 8.07242 9.40007 8.01502 9.25478 8.01502C9.10949 8.01502 8.97007 8.07242 8.8669 8.17473C8.85338 8.18875 7.84323 8.99357 7.84323 8.99357C7.77516 9.04776 7.69415 9.08327 7.60817 9.09662C7.5222 9.10997 7.43423 9.10069 7.35293 9.0697C6.34352 8.69386 5.42667 8.10548 4.66447 7.3444C3.90228 6.58332 3.31256 5.66732 2.93524 4.65845C2.90179 4.57604 2.89088 4.48621 2.90364 4.39819C2.9164 4.31017 2.95238 4.22714 3.00786 4.15763C3.00786 4.15763 3.81267 3.14697 3.82619 3.13395C3.92849 3.03077 3.98589 2.89136 3.98589 2.74606C3.98589 2.60076 3.92849 2.46135 3.82619 2.35817C3.81067 2.34315 2.88867 1.14368 2.88867 1.14368C2.78394 1.04978 2.64727 0.999488 2.50667 1.00312C2.36606 1.00675 2.23217 1.06403 2.13243 1.16321L1.5565 1.66403C-1.2691 5.06161 7.38048 13.2315 10.3578 10.4179L10.8141 9.89205C10.921 9.79301 10.9852 9.65629 10.9931 9.51077C11.0011 9.36525 10.9521 9.22235 10.8566 9.11227Z"
+                            fill="#021935"
+                          />
+                        </svg> </i
+                      >Phone Number
+                    </h6>
+                    <a
+                      class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                      href="callto:013221392132"
+                      >013 354 213 - 92132</a
+                    >
+                  </li>
+                  <li>
+                    <h6
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="14"
+                          height="12"
+                          viewBox="0 0 14 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.0833 0H2.91667C2.1434 0.000866104 1.40208 0.288481 0.855295 0.799756C0.308514 1.31103 0.00092625 2.00422 0 2.72727L0 9.27273C0.00092625 9.99578 0.308514 10.689 0.855295 11.2002C1.40208 11.7115 2.1434 11.9991 2.91667 12H11.0833C11.8566 11.9991 12.5979 11.7115 13.1447 11.2002C13.6915 10.689 13.9991 9.99578 14 9.27273V2.72727C13.9991 2.00422 13.6915 1.31103 13.1447 0.799756C12.5979 0.288481 11.8566 0.000866104 11.0833 0ZM2.91667 1.09091H11.0833C11.4326 1.09155 11.7737 1.18992 12.0627 1.37335C12.3517 1.55678 12.5754 1.81688 12.705 2.12018L8.23783 6.29782C7.90908 6.60399 7.46399 6.77589 7 6.77589C6.53601 6.77589 6.09092 6.60399 5.76217 6.29782L1.295 2.12018C1.42459 1.81688 1.64827 1.55678 1.93728 1.37335C2.22628 1.18992 2.56738 1.09155 2.91667 1.09091ZM11.0833 10.9091H2.91667C2.45254 10.9091 2.00742 10.7367 1.67923 10.4298C1.35104 10.1229 1.16667 9.70672 1.16667 9.27273V3.54545L4.93733 7.06909C5.48487 7.57978 6.22665 7.86657 7 7.86657C7.77335 7.86657 8.51513 7.57978 9.06267 7.06909L12.8333 3.54545V9.27273C12.8333 9.70672 12.649 10.1229 12.3208 10.4298C11.9926 10.7367 11.5475 10.9091 11.0833 10.9091Z"
+                            fill="#021935"
+                          />
+                        </svg>
+                      </i>
+                      email Address
+                    </h6>
+                    <a
+                      class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                      href="mailto:info123@gmail.com"
+                      >info123@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="copyright py-20 max-md:flex-wrap flex md:justify-between justify-center border-t border-[#d7d7d7]"
+        >
+          <p class="text-base leading-30 text-gary font-normal">
+            Copyright © <span class="current-year"> 2024 </span>
+            <span class="text-primary"
+              ><a href="https://dexignlab.com/"> Dexignlab.</a></span
+            >
+            All Rights Reserved.
+          </p>
+          <ul class="flex gap-x-25">
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="text-gary text-base font-Urbanist hover:text-primary duration-500"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="text-gary text-base font-Urbanist hover:text-primary duration-500"
+                >Privacy policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- search-popup -->
+    <div class="search-popup">
+      <button class="close-search"><i class="fa-solid fa-xmark"></i></button>
+      <form method="post" action="#">
+        <div class="form-group relative overflow-hidden">
+          <input
+            type="search"
+            name="search-field"
+            value=""
+            placeholder="Search Here"
+            required=""
+            class="placeholder:text-black"
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+    <!-- search-popup end -->
+
+    <!-- progress -->
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/plugins/counter/waypoints-min.js"></script>
+    <script src="assets/js/circle-progres.js"></script>
+    <script src="assets/js/dz.carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/dz.ajax.js"></script>
+    <!-- CONTACT JS  -->
+  </body>
+
+  <!-- Mirrored from madula.dexignlab.com/tailwind/demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jul 2025 07:06:25 GMT -->
+</html>
